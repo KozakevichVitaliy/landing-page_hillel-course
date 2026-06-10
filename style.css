@@ -32,14 +32,22 @@ a, a:visited {
     text-decoration: none;
     color: black;
     cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    font-weight: 900;
 }
 
 a:hover {
     text-transform: uppercase;
 }
 
+.links-list {
+    display: inline;
+}
+
 li:first-child {
-    background-color: rgb(34, 255, 0);
+
+    background-color: rgb(136, 255, 0);
 }
 
 .links-list a[href*="apple"] {
