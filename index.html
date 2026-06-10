@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+        <p>Застосовується до тегів p, вага 0 0 0 1</p>
+    <div>
+        <section>
+            <p>Застосовується до тегів p, вкладених у div, на будь якому рівні, вага 0 0 0 2</p>
+        </section>
+        
+    </div>
+    <div>
+        <p>Застосовується до тегів p, вкладених у div, на першому рівні, вага 0 0 0 2</p>
+        <!-- <section>
+            <p>Застосовується до тегів p, вкладених у div, на будь якому рівні, вага 0 0 0 2</p>
+        </section> -->
+    </div>
+    <div>
+        <p id="uniqueText">Застосовується до тегу з унікальним індетифікатором вага 0 1 0 0*</p>
+    </div>
+    <div>
+        <p class="someText">Застосовується до тегів p класом ".someText" 0 0 1 0</p>
+    </div>
+    <div>
+        <h4>Тег "h4"</h4>
+        <p class="someText"> Застосовується до тегів з класом ".someText", який є сусідом тегу "H4" і безпосереньо слідує за ним, вага 0 0 1 1</p>
+        <p class="someText">Тег з класом ".someText", є сусідом тегу "H4" але не слідує безпосереньо за ним, вага 0 0 1 0</p>
+    </div>
+    <div>
+        <h3>Тег "h3"</h3>
+        <p class="someText">Застосовується до тегів з класом ".someText", які слідують після  тегу "H3" і знаходяться на одному рівні HTML структури, вага 0 0 1 1</p>
+        <p class="someText">Застосовується до тегів з класом ".someText", які слідують після  тегу "H3" і знаходяться на одному рівні HTML структури, вага 0 0 1 1</p>
+    </div>
+
+</body>
+</html>
