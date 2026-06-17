@@ -3,50 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./style.css">
     <title>Document</title>
 </head>
 <body>
-        <p>Застосовується до тегів p, вага 0 0 0 1</p>
-    <div>
-        <section>
-            <p>Застосовується до тегів p, вкладених у div, на будь якому рівні, вага 0 0 0 2</p>
-        </section>
-        
+    <div class="container">
+        <table class="table">
+            <tr class="table__row table__row--one">
+                <td colspan="2" 
+                    class="table__cell" 
+                    data-type="column--1"
+                ></td>
+                <td colspan="3" class="table__cell"></td>
+                <td colspan="2" class="table__cell table__cell--yellow"></td>
+                <td rowspan="4" class="table__cell" data-type="column--8"></td>
+            </tr>
+            <tr class="table__row table__row--two">
+                <td class="table__cell" 
+                    data-type="column--1"
+                ></td>
+                <td colspan="4" rowspan="2" class="table__cell table__cell--red"></td>
+                <td colspan="2" class="table__cell table__cell--yellow"></td>
+            </tr>
+            <tr class="table__row table__row--three">
+                <td rowspan="2" 
+                    data-type="column--1"class="table__cell"
+                > </td>
+                <td class="table__cell"></td>
+                <td class="table__cell"></td>
+            </tr>
+            <tr class="table__row table__row--four">
+                <td colspan="2" 
+                    rowspan="2" 
+                    class="table__cell table__cell--black"
+                ></td>
+                <!-- <td class="table__cell"></td> -->
+                <td colspan="2" class="table__cell"></td>
+                <td colspan="2" class="table__cell"></td>
+            </tr>
+            <tr class="table__row table__row--five">
+                <td rowspan="3" 
+                    data-type="column--1" 
+                    class="table__cell table__cell--yellow"
+                ></td>
+                <!-- <td class="table__cell"></td> -->
+                <td colspan="2" class="table__cell"></td>
+                <td colspan="2" rowspan="2" class="table__cell table__cell--blue"></td>
+
+                <td rowspan="3" data-type="column--8" class="table__cell table__cell--red"></td>
+            </tr>
+            <tr class="table__row table__row--six">
+                <td colspan="2" 
+                    class="table__cell"
+                ></td>
+                <td colspan="2" class="table__cell table__cell--black"></td>
+            </tr>
+            <tr class="table__row table__row--seven">
+                <td colspan="2" 
+                    class="table__cell"
+                ></td>
+                <td colspan="4" class="table__cell"></td>
+            </tr>
+            
+        </table>
     </div>
-    <div>
-        <p>Застосовується до тегів p, вкладених у div, на першому рівні, вага 0 0 0 2</p>
-        <!-- <section>
-            <p>Застосовується до тегів p, вкладених у div, на будь якому рівні, вага 0 0 0 2</p>
-        </section> -->
-    </div>
-    <div>
-        <p id="uniqueText">Застосовується до тегу з унікальним індетифікатором вага 0 1 0 0*</p>
-    </div>
-    <div>
-        <p class="someText">Застосовується до тегів p класом ".someText" 0 0 1 0</p>
-    </div>
-    <div>
-        <h4>Тег "h4"</h4>
-        <p class="someText"> Застосовується до тегів з класом ".someText", який є сусідом тегу "H4" і безпосереньо слідує за ним, вага 0 0 1 1</p>
-        <p class="someText">Тег з класом ".someText", є сусідом тегу "H4" але не слідує безпосереньо за ним, вага 0 0 1 0</p>
-    </div>
-    <div>
-        <h3>Тег "h3"</h3>
-        <p class="someText">Застосовується до тегів з класом ".someText", які слідують після  тегу "H3" і знаходяться на одному рівні HTML структури, вага 0 0 1 1</p>
-        <p class="someText">Застосовується до тегів з класом ".someText", які слідують після  тегу "H3" і знаходяться на одному рівні HTML структури, вага 0 0 1 1</p>
-    </div>
-    <ul class="links-list">
-        <li>
-            <a href="https://www.google.com" >Google - застосовується до тегу "li", який є першим елементом, що має один батьківський елемент, вага 0 0 1 1</a>
-        </li>
-        <li>
-            <a href="https://www.apple.com">Apple - застосовується до тегу "а" який є дочірнім елементом тегу з класом ".links-list" і чий атрибут href містить підстроку "apple" вага 0 0 2 1</a>
-        </li>
-        <li>
-            <a href="https://www.meta.com" class="link">Meta - застосовується до тегу "а" з класом ".link", який є дочірнім елементом тегу з класом ".links-list" і чий атрибут href містить підстроку "meta" вага 0 0 3 1 </a>
-        </li>
-    </ul>
 
 </body>
 </html>

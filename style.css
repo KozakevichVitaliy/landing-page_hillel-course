@@ -1,60 +1,67 @@
-p {
-    background-color: rgb(234, 234, 119);
+* {
+    margin: 0;
+    padding: 0;
+    border: 0px;
+    box-sizing: content-box;
 }
 
-div p {
-    background-color: rgb(228, 119, 234);
+.container {
+    max-width: 1280px; 
+    margin: 0 auto;
 }
 
-div > p {
-    background-color: rgb(68, 255, 0);
-}
-
-
-#uniqueText {
-    background-color: rgb(177, 93, 93);
-}
-
-.someText {
-    background-color: rgb(153, 117, 220);
-}
-
-h4 + .someText {
-    background-color: rgb(0, 200, 255);
+.table {
+    margin: 0 auto;
 }
 
 
-h3 ~ .someText {
-    background-color: rgb(204, 255, 0);
+.table__row {
+    background-color: rgb(232, 225, 225);
 }
 
-a, a:visited {
-    text-decoration: none;
-    color: black;
-    cursor: pointer;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: large;
-    font-weight: 900;
+.table__cell {
+    border: 3px solid black;
+    width: 100px;
 }
 
-a:hover {
-    text-transform: uppercase;
+.table__row--one, .table__row--four, .table__row--five {
+    height: 75px;
 }
 
-.links-list {
-    display: inline;
+.table__row--two, .table__row--three {
+    height: 150px;
 }
 
-li:first-child {
-
-    background-color: rgb(136, 255, 0);
+.table__row--six {
+    height: 50px;
 }
 
-.links-list a[href*="apple"] {
-    background-color: rgb(0, 149, 255);
+.table__row--seven {
+    height: 25px;
 }
 
-.links-list a[href*="meta"].link {
-    background-color: rgb(251, 0, 255);
+
+[data-type="column--1"]{
+  width: 50px;
 }
 
+[data-type="column--8"]{
+    width: 25px
+}
+
+.table__cell--yellow {
+    background-color: yellow;
+}
+
+.table__cell--red {
+    background-color: red;
+}
+
+.table__cell--black {
+    background-color: black;
+    width: 20px;
+}
+
+.table__cell--blue {
+    background-color: blue;
+}
